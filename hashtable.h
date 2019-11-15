@@ -14,5 +14,5 @@ class HashTable {
  private:
   int key;             // customerID
   Customer* customer;  // links to customer
-  HashTableEntry(int key, Customer* customer);
+  void HashTableEntry(int key, Customer* customer);
 };
