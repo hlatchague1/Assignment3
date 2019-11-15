@@ -13,7 +13,7 @@ class MovieStore {
  public:
   MovieStore();
 
-  vector<Movie> movieInventory;
+  vector<vector<Movie>> movieInventoryPerGenre;
   HashTable<int, Customer> customerList;
   vector<Movie> GetMovieInventory();
 

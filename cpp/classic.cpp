@@ -3,10 +3,7 @@
 Classic::Classic() {}
 
 Classic::Classic(string movieTitle, int stockAmount, string directorName,
-                 string featuredActor, int releaseYear) {}
-
-Classic::Classic(string movieTitle, int stockAmount, string directorName,
-                 string featuredActor, int releaseMonth, int releaseYear) {}
+                 string featuredActorFirstName, string featuredActorLastName, int releaseYear) {}
 
 Classic::~Classic() {}
 

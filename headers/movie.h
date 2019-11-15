@@ -11,6 +11,7 @@ class Movie {
   string directorName;
   int releaseYear;
   string movieStatus;
+  int totalStock;
 
  public:
   string GetMovieTitle();
@@ -25,5 +26,11 @@ class Movie {
   void SetReleaseYear(int releaseYear);
   void SetMovieStatus(string status);
 
-  bool AddToStock();
+  bool AddToInventory();
+  bool RemovedFromInventory();
+
+  virtual bool operator==(const Classic &otherMovie) const = 0;
+  virtual bool operator!=(const Classic &otherMovie) const = 0;
+  virtual bool operator<(const Classic &otherMovie) const = 0;
+  virtual bool operator>(const Classic &otherMovie) const = 0;
 };

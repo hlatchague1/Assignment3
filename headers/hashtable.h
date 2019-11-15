@@ -7,12 +7,12 @@ class HashTable {
   ~HashTable();
 
   int HashFunction(int key);
-  bool Insert(int key, Customer*);
-  bool Search();
+  bool Insert(int key, Customer *);
+  bool Search(int key);
   bool Remove(int key);
 
  private:
-  int key;             // customerID
-  Customer* customer;  // links to customer
-  void HashTableEntry(int key, Customer* customer);
+  int key;                // customerID
+  Customer *customerPtr;  // links to customer
+                          // void HashTableEntry(int key, Customer* customer);
 };

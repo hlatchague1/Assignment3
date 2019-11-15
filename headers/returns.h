@@ -4,7 +4,7 @@
 
 class Returns : public Transactions {
  public:
-  Returns(char transactionType, Customer* customer, int mediaType,
-          Movie* movie);
+  Returns(char transactionType, Customer *customerPtr, int mediaType,
+          Movie *moviePtr);
   ~Returns();
 };

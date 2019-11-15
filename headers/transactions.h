@@ -1,16 +1,17 @@
 #pragma once
+
 #include "customer.h"
 #include "movie.h"
 
 class Transactions {
  public:
   Transactions();
-  Transactions(char transactionType, Customer* customer, int mediaType,
-               Movie* movie);
+  Transactions(char transactionType, Customer *customerPtr, int mediaType,
+               Movie *moviePtr);
 
  protected:
   char transactionType;
-  Customer* customer;
+  Customer *customerPtr;
   int mediaType;
-  Movie* movie;
+  Movie *moviePtr;
 };

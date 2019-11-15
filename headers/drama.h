@@ -11,10 +11,8 @@ class Drama : public Movie {
         int releaseYear);
   ~Drama();
 
-  bool operator==(const Drama& otherMovie) const;
-  bool operator!=(const Drama& otherMovie) const;
-  bool operator<(const Drama& otherMovie) const;
-  bool operator>(const Drama& otherMovie) const;
-  bool operator<=(const Drama& otherMovie) const;
-  bool operator>=(const Drama& otherMovie) const;
+  bool operator==(const Drama &otherMovie) const;
+  bool operator!=(const Drama &otherMovie) const;
+  bool operator<(const Drama &otherMovie) const;
+  bool operator>(const Drama &otherMovie) const;
 };

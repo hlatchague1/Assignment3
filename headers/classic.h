@@ -1,30 +1,34 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include "movie.h"
 
 using namespace std;
 
 class Classic : public Movie {
  private:
-  string featuredActor;
+  string featuredActorFirstName;
+  string featuredActorLastName;
   int releaseMonth;
+  vector<pair<string, string>> actorsInMovie;
 
  public:
   Classic(string movieTitle, int stockAmount, string directorName,
-          string featuredActor, int releaseMonth, int releaseYear);
+          string featuredActorFirstName, string featuredActorLastName,
+          int releaseMonth, int releaseYear);
   ~Classic();
 
-  string GetFeaturedActor();
+  string GetFeaturedActorFirstName();
+  string GetFeaturedActorLastName();
   int GetReleaseMonth();
 
-  void SetFeaturedActor(int majorActor);
+  void SetFeaturedActorFirstName(string actorFirstName);
+  void SetFeaturedActorLastName(string actorLastName);
   void SetReleaseMonth(int releaseMonth);
 
-  bool operator==(const Classic& otherMovie) const;
-  bool operator!=(const Classic& otherMovie) const;
-  bool operator<(const Classic& otherMovie) const;
-  bool operator>(const Classic& otherMovie) const;
-  bool operator<=(const Classic& otherMovie) const;
-  bool operator>=(const Classic& otherMovie) const;
+  bool operator==(const Classic &otherMovie) const;
+  bool operator!=(const Classic &otherMovie) const;
+  bool operator<(const Classic &otherMovie) const;
+  bool operator>(const Classic &otherMovie) const;
 };
