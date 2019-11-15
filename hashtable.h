@@ -1,5 +1,3 @@
 
 
-class HashTable {
-
-};
+class HashTable {};

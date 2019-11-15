@@ -2,7 +2,6 @@
  * Driver for starting movie store tests
  */
 
-
 #include <iostream>
 
 using namespace std;
