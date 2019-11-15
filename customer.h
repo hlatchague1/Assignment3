@@ -1,7 +1,18 @@
 #pragma once
 
+#include "transactions.h"
+#include <vector>
+#include <string>
+
+using namespace std;
+
 class Customer {
 public:
+
+	Customer();
+	Customer(int id, int fName, int lName);
+	~Customer();
+
 	int GetID();
 	string GetFirstName();
 	string GetLastName();

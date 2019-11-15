@@ -1,5 +1,17 @@
 #include "customer.h"
 
+Customer::Customer()
+{
+}
+
+Customer::Customer(int id, int fName, int lName)
+{
+}
+
+Customer::~Customer()
+{
+}
+
 int Customer::GetID()
 {
 	return 0;

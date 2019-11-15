@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Customer">
+    <Position X="11.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QAEIAQAAAABAACAAAAAEgAAAAAgAAAAAAAAAiAACEgA=</HashCode>
+      <FileName>customer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HashTable" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAhAABAAAAEAAAEAAAAAAEAAAIAACAAAgAAAAA=</HashCode>
+      <FileName>hashtable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieStore">
+    <Position X="4.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACEAAAAMEAAAAAAAQAAAE=</HashCode>
+      <FileName>moviestore.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transactions">
+    <Position X="8.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAABAAAAAAAAABAIAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>transactions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Return" Collapsed="true">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAA=</HashCode>
+      <FileName>transactions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransactionFactory" Collapsed="true">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>transactions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,33 +1,16 @@
 #pragma once
+#include "customer.h"
+#include "movie.h"
 
 class Transactions {
+public:
+	Transactions();
+	Transactions(char transactionType, Customer* customer, int mediaType, Movie* movie);
+
 protected:
+	char transactionType;
+	Customer* customer;
+	int mediaType;
+	Movie* movie;
 
-};
-
-class Borrow : public Transactions {
-
-};
-
-
-class Return : public Transactions {
-
-};
-
-//class Inventory : public Transactions {
-//
-//};
-//
-//class History : public Transactions {
-//
-//};
-
-class TransactionFactory {
-	//static Transactions* create(const string& transactionInitial) {
-	//	if (transactionInitial == "B")
-	//		return new Borrow();
-	//	if (transactionInitial == "R")
-	//		return new Return();
-	//	return nullptr;
-	}
 };
