@@ -1,32 +1,31 @@
 #pragma once
 
-#include "transactions.h"
-#include <vector>
 #include <string>
+#include <vector>
+#include "transactions.h"
 
 using namespace std;
 
 class Customer {
-public:
+ public:
+  Customer();
+  Customer(int id, int fName, int lName);
+  ~Customer();
 
-	Customer();
-	Customer(int id, int fName, int lName);
-	~Customer();
+  int GetID();
+  string GetFirstName();
+  string GetLastName();
+  vector<Transactions> GetHistory();
 
-	int GetID();
-	string GetFirstName();
-	string GetLastName();
-	vector<Transactions> GetHistory();
+  void SetID(int ID);
+  void SetFirstName(int fName);
+  void SetLastName(int lName);
 
-	void SetID(int ID);
-	void SetFirstName(int fName);
-	void SetLastName(int lName);
+  bool AddToHistory();
 
-	bool AddToHistory();
-
-private:
-	int customerID;
-	string firstName;
-	string lastName;
-	vector<Transactions> history;
+ private:
+  int customerID;
+  string firstName;
+  string lastName;
+  vector<Transactions> history;
 };
