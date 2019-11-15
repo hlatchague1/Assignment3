@@ -5,9 +5,9 @@
 
 class Transactions {
  public:
-  Transactions();
   Transactions(char transactionType, Customer *customerPtr, int mediaType,
                Movie *moviePtr);
+  ~Transactions();
 
  protected:
   char transactionType;
