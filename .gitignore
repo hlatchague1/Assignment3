@@ -108,7 +108,7 @@ a.out*
 /.vs/movies-hlatchague1/v16
 /.vs/Assignment3/v16
 /.vs
-/Assignment4.vcxproj.user
-/Assignment4.vcxproj.filters
-/Assignment4.vcxproj
-/Assignment4.sln
+*.sln
+*.vcxproj
+*.filters
+*.user
