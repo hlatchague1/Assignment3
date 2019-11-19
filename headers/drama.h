@@ -7,8 +7,7 @@ using namespace std;
 
 class Drama : public Movie {
  public:
-  Drama(string movieTitle, int stockAmount, string directorName,
-        int releaseYear);
+  Drama(string[] commandLineArray);
   ~Drama();
 
   bool operator==(const Drama &otherMovie) const;
