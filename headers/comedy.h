@@ -11,6 +11,8 @@ class Comedy : public Movie {
          int releaseYear);
   ~Comedy();
 
+
+  // sorted by Title, then Year released
   bool operator==(const Comedy& otherMovie) const;
   bool operator!=(const Comedy& otherMovie) const;
   bool operator<(const Comedy& otherMovie) const;
@@ -18,3 +20,5 @@ class Comedy : public Movie {
   bool operator<=(const Comedy& otherMovie) const;
   bool operator>=(const Comedy& otherMovie) const;
 };
+
+// me
