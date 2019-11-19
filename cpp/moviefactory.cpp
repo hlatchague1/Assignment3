@@ -2,11 +2,13 @@
 
 static Movie* CreateMovie(const string& commandLine) {
   char movieType = commandLine[0];
+
   if (movieType == 'C') {
     int numberOfCommands = 7;
     string lineOfCommand[numberOfCommands];
     stringstream ssin(commandLine);
     while (ssin.good() && i < numberOfCommands) {
+      if (ssin.peak() == ',') ssin.ignore();
       ssin >> lineOfCommand[i];
       ++i;
     }
